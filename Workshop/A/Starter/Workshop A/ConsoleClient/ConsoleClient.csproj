@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Wincubate.WorkshopA.ConsoleClient</AssemblyName>
+    <RootNamespace>Wincubate.WorkshopA.ConsoleClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj" />
+    <ProjectReference Include="..\Data.EF\Data.EF.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Utility.Data.EF\Utility.Data.EF.csproj" />
+    <ProjectReference Include="..\Utility.Data\Utility.Data.csproj" />
+  </ItemGroup>
+
+</Project>
