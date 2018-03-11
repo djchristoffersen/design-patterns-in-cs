@@ -4,31 +4,25 @@ namespace Wincubate.BuilderExamples
 {
     class HawaiiPizzaBuilder
     {
-        public Pizza Product => _pizza;
-        private Pizza _pizza;
-
-        public HawaiiPizzaBuilder()
-        {
-            _pizza = new Pizza();
-        }
+        public Pizza Product { get; } = new Pizza();
 
         public void Build()
         {
-            CreateCrust();
+            BuildCrust();
             AddToppings();
             AddSpices();
         }
 
-        private void CreateCrust()
+        private void BuildCrust()
         {
-            _pizza.Crust = CrustKind.Classic;
-            _pizza.HasSauce = true;
-            _pizza.Cheese = CheeseKind.Regular;
+            Product.Crust = CrustKind.Classic;
+            Product.HasSauce = true;
+            Product.Cheese = CheeseKind.Regular;
         }
 
         private void AddToppings()
         {
-            _pizza.Toppings = new List<ToppingKind>
+            Product.Toppings = new List<ToppingKind>
             {
                 ToppingKind.Ham,
                 ToppingKind.Pineapple
@@ -37,7 +31,7 @@ namespace Wincubate.BuilderExamples
 
         private void AddSpices()
         {
-            _pizza.Oregano = true;
+            Product.Oregano = true;
         }
     }
 }

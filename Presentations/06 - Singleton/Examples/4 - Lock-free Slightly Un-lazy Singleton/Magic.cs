@@ -7,8 +7,7 @@ namespace Wincubate.SingletonExamples
     {
         public int Number { get; }
 
-        public static Magic Instance => _instance;
-        private static readonly Magic _instance = new Magic();
+        public static Magic Instance { get; } = new Magic();
 
         static Magic() { } // <-- To prevent beforefieldinit in IL
 
@@ -16,7 +15,7 @@ namespace Wincubate.SingletonExamples
         {
             int[] numbers = { 42, 87, 112, 176, 1880 };
 
-            Thread.Sleep(20); // <-- emulates number is resource-intensive to create
+            Thread.Sleep(20); // <-- emulates that number is resource-intensive to create
 
             Random random = new Random(DateTime.Now.Millisecond);
             Number = numbers[random.Next(numbers.Length)];

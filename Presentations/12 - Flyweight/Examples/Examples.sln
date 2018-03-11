@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "Utility\Utility.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2 - Adding Flyweights", "2 - Adding Flyweights\2 - Adding Flyweights.csproj", "{FCDA5DFE-F934-40A1-9C7B-C69D99D59954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 - String Interning", "3 - String Interning\3 - String Interning.csproj", "{3796A413-F0D5-4BD6-A590-0F13A0A10A1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4 - String Interning", "4 - String Interning\4 - String Interning.csproj", "{3796A413-F0D5-4BD6-A590-0F13A0A10A1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,6 +6,14 @@
     <RootNamespace>Wincubate.FacadeExamples</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\ApplicationApi\ApplicationApi.csproj" />
     <ProjectReference Include="..\SettingsApi\SettingsApi.csproj" />

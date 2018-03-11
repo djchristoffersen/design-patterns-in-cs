@@ -13,7 +13,7 @@ namespace Wincubate.AbstractFactoryExamples
 
         public void Call( string who )
         {
-            Console.WriteLine($"Calling {who} from an iPhone 6 with {MemoryGb} GB of memory");
+            Console.WriteLine($"Calling {who} from an iPhone 7 with {MemoryGb} GB of memory");
         }
     }
 }

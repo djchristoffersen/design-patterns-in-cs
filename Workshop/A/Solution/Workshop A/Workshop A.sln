@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{9BCAEEEF-C5D9-43D0-A906-8E85F0AF35AD}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{0A46665A-9A07-46E8-BE2F-BF5697D12DA3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.EF", "Data.EF\Data.EF.csproj", "{B2ACA1CE-E709-4449-9256-5D479E986816}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToBeDeleted", "ToBeDeleted\ToBeDeleted.csproj", "{9F1950C0-ABFF-43BC-8B5F-FC08454B3924}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{9BCAEEEF-C5D9-43D0-A906-8E85F0AF35AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility.Data", "Utility.Data\Utility.Data.csproj", "{BD945A43-DF16-4CCA-BED8-C6C2323D3A95}"
 EndProject

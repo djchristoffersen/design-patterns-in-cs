@@ -25,15 +25,10 @@ namespace Wincubate.PrototypeExamples
 
         #region ICloneable Members
 
-        public object Clone()
-        {
-            // As elements are objects (and not values!) they in turn need to be cloneable
-            Deck clone = new Deck(
+        // As elements are objects (and not values!) they in turn need to be cloneable
+        public object Clone() => new Deck(
                 _cards.Select( card => card.Clone() ).OfType<Card>()                    
             );
-
-            return clone;
-        }
 
         #endregion
 
@@ -53,10 +48,7 @@ namespace Wincubate.PrototypeExamples
             }
         }
 
-        private Deck( IEnumerable<Card> cards )
-        {
-            _cards = cards.ToList();
-        }
+        private Deck( IEnumerable<Card> cards ) => _cards = cards.ToList();
 
         public Card TakeCard()
         {

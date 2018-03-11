@@ -4,6 +4,8 @@
     {
         static void Main( string[] args )
         {
+            // HR New Employee Process
+
             IDeviceFactory factory = new AppleFactory(); // <-- Only(!) reference to vendor
 
             IMobilePhone phone = factory.CreateMobilePhone();

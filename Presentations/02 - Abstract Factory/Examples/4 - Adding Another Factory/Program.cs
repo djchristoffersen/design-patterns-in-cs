@@ -4,6 +4,8 @@
     {
         static void Main( string[] args )
         {
+            // HR New Employee Process
+
             IDeviceFactory factory = new SamsungFactory();
 
             IMobilePhone phone = factory.CreateMobilePhone();

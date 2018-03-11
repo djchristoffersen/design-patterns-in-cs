@@ -23,8 +23,6 @@ namespace Wincubate.FlyweightExamples
                 c4.Serve(rng.GetRandomName());
                 ICoffee c5 = factory.CreateCoffee(nameof(LatteTriplo));
                 c5.Serve(rng.GetRandomName());
-                ICoffee c6 = factory.CreateCoffee(nameof(SingleLatte));
-                c6.Serve(rng.GetRandomName());
             }
 
             Console.WriteLine();

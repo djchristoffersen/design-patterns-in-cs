@@ -6,14 +6,14 @@ namespace Wincubate.BuilderExamples
     {
         public override void BuildCrust()
         {
-            _pizza.Crust = CrustKind.Classic;
-            _pizza.HasSauce = true;
-            _pizza.Cheese = CheeseKind.Regular;
+            Product.Crust = CrustKind.Classic;
+            Product.HasSauce = true;
+            Product.Cheese = CheeseKind.Regular;
         }
 
         public override void AddToppings()
         {
-            _pizza.Toppings = new List<ToppingKind>
+            Product.Toppings = new List<ToppingKind>
             {
                 ToppingKind.Ham,
                 ToppingKind.Pineapple
@@ -22,7 +22,7 @@ namespace Wincubate.BuilderExamples
 
         public override void AddSpices()
         {
-            _pizza.Oregano = true;
+            Product.Oregano = true;
         }
     }
 }

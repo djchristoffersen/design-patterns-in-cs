@@ -33,15 +33,12 @@ namespace Wincubate.PrototypeExamples
         public Rank Rank { get; }
 
         #region ICloneable Members
-        public object Clone()
-        {
-            // Card clone = new Card(Suit, Rank);
 
-            // ...or...
+        //public object Clone() => new Card(Suit, Rank);
 
-            Card clone = this.MemberwiseClone() as Card;
-            return clone;
-        }
+        // ...or...
+
+        public object Clone() => this.MemberwiseClone() as Card;
 
         #endregion
 

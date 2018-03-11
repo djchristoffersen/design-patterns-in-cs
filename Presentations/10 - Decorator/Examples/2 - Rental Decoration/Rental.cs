@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Wincubate.DecoratorExamples
 {
@@ -10,20 +11,10 @@ namespace Wincubate.DecoratorExamples
         public IEnumerable<string> RentalHistory => _rentalHistory;
         private List<string> _rentalHistory;
 
-        public override string ToString()
-        {
-            string s = base.ToString() +
-                $"{Environment.NewLine}{Available} available for rent.";
-
-            if( _rentalHistory.Count > 0 )
-            {
-                string r = string.Join(Environment.NewLine, _rentalHistory);
-
-                s += $"{ Environment.NewLine}{r}";
-            }
-
-            return s;
-        }
+        public override string ToString() =>
+            base.ToString() +
+            $"{Environment.NewLine}{Available} available for rent." +
+            $"{Environment.NewLine}{string.Join(Environment.NewLine, _rentalHistory)}{Environment.NewLine}";
 
         public Rental( IVehicle decoratee, int available ) : base(decoratee)
         {

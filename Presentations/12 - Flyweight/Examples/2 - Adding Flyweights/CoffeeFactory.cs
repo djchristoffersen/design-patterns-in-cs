@@ -36,9 +36,6 @@ namespace Wincubate.FlyweightExamples
                     case nameof(LatteTriplo):
                         _coffees[coffeeType] = new LatteTriplo();
                         break;
-                    case nameof(SingleLatte):
-                        _coffees[coffeeType] = new SingleLatte();
-                        break;
                     default:
                         throw new NotSupportedException($"Coffee type {coffeeType} not supported");
                 }

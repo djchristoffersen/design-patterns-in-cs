@@ -21,8 +21,6 @@ namespace Wincubate.FlyweightExamples
                 c4.Serve();
                 ICoffee c5 = new LatteTriplo(rng.GetRandomName());
                 c5.Serve();
-                ICoffee c6 = new SingleLatte(rng.GetRandomName());
-                c6.Serve();
             }
 
             //Console.WriteLine();
