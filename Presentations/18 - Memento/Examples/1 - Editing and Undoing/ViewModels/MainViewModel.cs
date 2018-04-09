@@ -80,11 +80,7 @@ namespace Wincubate.MementoExamples
 
         private void AddGuest( object o )
         {
-            Guests.Add(new Guest
-            {
-                Name = Name,
-                Company = Company
-            });
+            Guests.Add(new Guest(Name, Company));
 
             Name = string.Empty;
             Company = string.Empty;

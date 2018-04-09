@@ -33,9 +33,6 @@ namespace BrewingCoffee
                 case nameof(LatteTriplo):
                     instantiationFunction = _ => new LatteTriplo();
                     break;
-                case nameof(SingleLatte):
-                    instantiationFunction = _ => new SingleLatte();
-                    break;
                 default:
                     throw new NotSupportedException($"Coffee type {coffeeType} not supported");
             }

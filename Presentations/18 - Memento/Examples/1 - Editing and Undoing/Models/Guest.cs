@@ -1,8 +1,14 @@
 ﻿namespace Wincubate.MementoExamples
 {
-    class Guest
+    readonly struct Guest
     {
-        public string Name { get; set; }
-        public string Company { get; set; }
+        public Guest( string name, string company )
+        {
+            Name = name;
+            Company = company;
+        }
+
+        public string Name { get; }
+        public string Company { get; }
     }
 }

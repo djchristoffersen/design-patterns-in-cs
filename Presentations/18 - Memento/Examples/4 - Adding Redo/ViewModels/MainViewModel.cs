@@ -98,11 +98,7 @@ namespace Wincubate.MementoExamples
             // Save state
             _undoMementos.Push(Guests.Memento);
 
-            Guests.Add(new Guest
-            {
-                Name = Name,
-                Company = Company
-            });
+            Guests.Add(new Guest(Name, Company));
 
             Name = string.Empty;
             Company = string.Empty;
@@ -112,7 +108,7 @@ namespace Wincubate.MementoExamples
 
         private void Undo( object o )
         {
-            if( _undoMementos.Any() )
+            if (_undoMementos.Any())
             {
                 IMemento old = Guests.Memento;
                 _redoMementos.Push(old);

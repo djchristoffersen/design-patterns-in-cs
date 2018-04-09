@@ -27,17 +27,17 @@ namespace WritingConsoleLogs
 
         public void Log( string line, bool error = false )
         {
-            // Save existing color
-            ConsoleColor old = Console.ForegroundColor;
-
-            Console.ForegroundColor = (error ? ConsoleColor.Red : ConsoleColor.Gray);
-            Console.WriteLine( line );
-
-            // Restore previous color
-            Console.ForegroundColor = old;
-
-            lock( _sync )
+            lock (_sync)
             {
+                // Save existing color
+                ConsoleColor old = Console.ForegroundColor;
+
+                Console.ForegroundColor = (error ? ConsoleColor.Red : ConsoleColor.Gray);
+                Console.WriteLine( line );
+
+                // Restore previous color
+                Console.ForegroundColor = old;
+
                 // Provide thread-safe access to the _linesLogged member while incrementing
                 _linesLogged++;
             }
