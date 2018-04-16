@@ -6,7 +6,7 @@ namespace Wincubate.MediatorExamples
     {
         public string Name { get; }
 
-        private IMediator _mediator;
+        private readonly IMediator _mediator;
 
         public Colleague( IMediator mediator, string name )
         {

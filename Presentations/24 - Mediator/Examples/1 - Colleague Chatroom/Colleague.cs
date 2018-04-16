@@ -8,8 +8,8 @@ namespace Wincubate.MediatorExamples
     {
         public string Name { get; }
 
-        private IEnumerable<string> _topics;
-        private IList<IColleague> _colleagues;
+        private readonly IEnumerable<string> _topics;
+        private readonly IList<IColleague> _colleagues;
 
         public Colleague( string name, params string[] topics )
         {

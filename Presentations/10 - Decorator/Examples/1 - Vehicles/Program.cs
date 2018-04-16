@@ -11,7 +11,7 @@ namespace Wincubate.DecoratorExamples
             IVehicle bmwM2 = new Car("BMW M2", VehicleColor.CobaltBlue, CarBodyStyle.Coupe, 5);
             IVehicle bmwi3 = new Car("BMW i3", VehicleColor.RubyRed, CarBodyStyle.Sedan, 5);
             IVehicle kawasakiNinja400 = new Motorcycle("Kawasaki Ninja 400 2018", VehicleColor.LimeGreen, 2, 399);
-            IVehicle asprilia = new Motorcycle("Asprilia Shiver 900", VehicleColor.Black, 2, 896);
+            IVehicle aprilia = new Motorcycle("Aprilia Shiver 900", VehicleColor.Black, 2, 896);
 
             IEnumerable<IVehicle> vehicles = new List<IVehicle>
             {
@@ -19,7 +19,7 @@ namespace Wincubate.DecoratorExamples
                 bmwM2,
                 bmwi3,
                 kawasakiNinja400,
-                asprilia
+                aprilia
             };
             foreach (IVehicle vehicle in vehicles)
             {

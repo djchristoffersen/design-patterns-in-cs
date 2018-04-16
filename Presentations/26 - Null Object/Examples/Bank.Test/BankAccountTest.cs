@@ -7,7 +7,7 @@ namespace Wincubate.NullObjectExamples.Test
     public class BankAccountTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        [ExpectedException(typeof(InvalidOperationException))]
         public void TestWithdraw()
         {
             BankAccount account = new BankAccount();
