@@ -22,9 +22,12 @@ namespace Wincubate.MementoExamples
             set
             {
                 ClearItems();
-                foreach( Guest g in value.State as IEnumerable<Guest> )
+
+                // Make sure value indeed came from GuestsViewModel originally
+                GuestsViewModelMemento memento = (GuestsViewModelMemento)value;
+                foreach (Guest guest in memento.State as IEnumerable<Guest>)
                 {
-                    Add(g);
+                    Add(guest);
                 }
             }
         }
